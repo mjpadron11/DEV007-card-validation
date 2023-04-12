@@ -34,7 +34,7 @@ for (const input of cardInfo.numberInputs) {
 }
 
 submitButton.addEventListener("click", (e) => {
-  e.preventDefault(e);
+  // e.preventDefault(e);
   console.log(numberInput[0].value);
 })
 
