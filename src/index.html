@@ -6,9 +6,48 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <form class="form" id="form">
+        <div class="payment-method-container">
+          <picture class="image-container">
+            <img src="/public/keyboard-double-arrow-left-rounded.svg" alt="Return arrow">
+          </picture>
+          <h1>Agregar método de pago</h1>
+        </div>
+          <div class="form-container">
+            <div class="card-number-box">
+              <label>Número de tarjeta</label>
+              <input type="text" class="number" id="card-number" pattern="^\d{13,19}$" maxlength="19" title="Ingresa entre 13 y 19 carácteres" required >
+            </div>
+            <div class="container">
+            <div class="user-information">
+              <div class="name-container">
+                <label>Nombre</label>
+                <input type="text" name="" id="card-name" requsired>
+              </div>
+              <div class="expiration-container">
+                <label>Fecha de exp.</label>
+                <input type="month" name="" id="card-exp" reqsuired>
+              </div>
+            </div>
+            <div class="card-security-information">
+              <div class="surname-container">
+                <label>Apellido</label>
+                <input type="text" name="" id="card-lastname" requsired>
+              </div>
+              <div class="code-container">
+                <label>Código de seguridad</label>
+                <input type="text" class="number" id="card-code" maxlength="3"requsired>
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <button type="submit" id="button">Confirmar</button>
+          </div>
+        </div>
+      </form>
+    </main>
+    <!-- <footer></footer> -->
     <script src="index.js" type="module"></script>
   </body>
 </html>
