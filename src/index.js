@@ -19,10 +19,6 @@ const cardInfo = {
 
 // console.log(cardInfo.numberInputs);
 
-// if(cardInfo?.code.value.length < 3){
-//   return false;
-// }
-
 //Función para que sólo puedan ingresarse números en el input
 for (const input of cardInfo.numberInputs) {
   // console.log(input);
@@ -33,7 +29,7 @@ for (const input of cardInfo.numberInputs) {
   });
 }
 
-submitButton.addEventListener("click", (e) => {
+submitButton.addEventListener("click", () => {
   // e.preventDefault(e);
   console.log(numberInput[0].value);
 })
