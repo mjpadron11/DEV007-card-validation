@@ -72,19 +72,46 @@ form{
     display: flex;
     flex-direction: column;
     background-color: rgb(251, 255, 255);
-    gap: 2rem;
-    border-radius: 10px;
+    gap: 1rem;
+    border-radius: 40px;
     max-width: 550px;
     height: 470px;
 }
 
+h1{
+    display: flex;
+    align-items: center;
+}
+
+.return-image-container{
+    height: 50px;
+    /* width: 50px; */
+    background: gainsboro;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.return-image{
+    height: 100%;
+}
+
+.bank-cards-container{
+    height: 50px;
+}
+
+.bank-cards-image{
+    height: 100%;
+}
+
+
 .payment-method-container{
     display: flex;
+    justify-content: space-between;
     background-image: radial-gradient(circle at 117.66% 61.93%, #00abbe 0, #00aac7 7.14%, #00a9cf 14.29%, #00a8d6 21.43%, #00a6dc 28.57%, #00a4e0 35.71%, #28a1e3 42.86%, #489ee5 50%, #609be5 57.14%, #7497e4 64.29%, #8693e1 71.43%, #968fdd 78.57%, #a58bd8 85.71%, #b288d1 92.86%, #bd84c9 100%);
     color:rgb(251, 255, 255);
     font-size: 25px;
     font-weight: 700;
-    border-radius: 10px 10px 0 0;
+    border-radius: 40px 40px 0 0;
     padding: 1rem;
     gap: 1rem;
 }
@@ -108,9 +135,9 @@ form{
 
 input{
     border:1px solid #000000;
-    border-radius: 5px;
+    border-radius: 10px;
     height: 30px;
-    width: 180px;
+    width: 200px;
 }
 
 .container{
@@ -121,11 +148,13 @@ input{
 .user-information{
     display: flex;
     flex-direction: column;
+    gap: 2rem;
 }
 
 .card-security-information{
     display: flex;
     flex-direction: column;
+    gap: 2rem;
 }
 
 .button-container{
