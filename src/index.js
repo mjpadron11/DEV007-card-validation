@@ -5,7 +5,6 @@ const name = document.getElementById("card-name");
 const lastname = document.getElementById("card-lastname");
 const code = document.getElementById("card-code");
 const submitButton = document.getElementById("button");
-// console.log(cardNumber);
 
 const cardInfo = {
   numberInputs: numberInput.value,
@@ -18,12 +17,6 @@ const cardInfo = {
 console.log(cardInfo);
 
 //Función para que sólo puedan ingresarse números en el input
-
-
-
-// for (const input of numberInput) {
-//   // console.log(input);
-
 number.addEventListener("input", (e) => {
   const currentValue = e.target.value;
   e.target.value = currentValue.replace(/[^0-9]/g, "");
@@ -32,10 +25,17 @@ number.addEventListener("input", (e) => {
 
 submitButton.addEventListener("click", (e) => {
   e.preventDefault();
-  validator.isValid(number.value);
-  console.log(validator);
+  console.log(validator.isValid(number.value))
+  if(validator.isValid(number.value)){
+    console.log(validator.maskify(number.value))
+    alert("El número es correcto. La información se ha guardado.")
+  }else{
+    alert("El número ingresado en incorrecto. Por favor, ingresa un número de tarjeta válido.")
+  }
+
 })
 
+// console.log(validator);
 
 
 

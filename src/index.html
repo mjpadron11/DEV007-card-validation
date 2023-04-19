@@ -14,33 +14,33 @@
           </picture>
           <h1>Agregar método de pago</h1>
           <picture class="back-cards-container">
-            <img src="/public/bank-cards.svg" alt="Bank cards" class="bank-cards-image">
+            <img src="public/bank-cards.svg" alt="Bank cards" class="bank-cards-image">
           </picture>
         </div>
           <div class="form-container">
             <div class="card-number-box">
               <label>Número de tarjeta</label>
-              <input type="text" class="number" id="card-number" maxlength="19" title="Ingresa entre 13 y 19 carácteres" required >
+              <input type="text" class="number" id="card-number" maxlength="19" title="Ingresa entre 13 y 19 carácteres" required />
             </div>
             <div class="container">
             <div class="user-information">
               <div class="name-container">
                 <label>Nombre</label>
-                <input type="text" name="" id="card-name" requsired>
+                <input type="text" name="" id="card-name" required />
               </div>
               <div class="expiration-container">
                 <label>Fecha de exp.</label>
-                <input type="month" name="" id="card-exp" reqsuired>
+                <input type="month" name="" id="card-exp" required />
               </div>
             </div>
             <div class="card-security-information">
               <div class="surname-container">
                 <label>Apellido</label>
-                <input type="text" name="" id="card-lastname" requsired>
+                <input type="text" name="" id="card-lastname" required />
               </div>
               <div class="code-container">
-                <label>Código de seguridad</label>
-                <input type="number" class="number" id="card-code" maxlength="3"requsired>
+                <label>CVV</label>
+                <input type="number" class="number" id="card-code" maxlength="3" required />
               </div>
             </div>
           </div>
@@ -49,6 +49,14 @@
           </div>
         </div>
       </form>
+      <!-- <div class="modal-container">
+        <picture class="check-container">
+          <img class="check-image" src="/public/round-check-circle.svg" alt="Checked icon">
+        </picture>
+        <p>Tu tarjeta se ha guardado exitosamente</p>
+        <p>Tarjeta n° xxxx xxxx xxxx 1111</p>
+        <button>Aceptar</button>
+      </div> -->
     </main>
     <!-- <footer></footer> -->
     <script src="index.js" type="module"></script>
