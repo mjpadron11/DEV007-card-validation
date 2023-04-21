@@ -1,6 +1,6 @@
 const validator = {
   isValid(cardNumber){
-  //Se convirtió el string en array y luego se invirtió el orden
+  //El string se pasa a array y luego se invirtió el orden
     const arrayAlReves = cardNumber.split("").reverse();
     //Se filtró cada número con índice impar
     const filteredArray = arrayAlReves.filter((num, i) => i %  2 !== 0)
@@ -30,9 +30,16 @@ const validator = {
   },
 
   maskify(cardNumber) {
+    if(cardNumber.length <= 4){
+      return cardNumber
+    }
+    //Se verifica la longitud de la información introducida
     const cardLength = cardNumber.length;
-    const lastDigits = cardNumber .slice(cardLength - 4, cardLength);
+    //Se cortan los últimos 4 números de la tarjeta
+    const lastDigits = cardNumber.slice(cardLength - 4, cardLength);
+    //Se hashean el resto de los números
     const hash = '#'.repeat(cardLength - 4);
+    //Se concatenan los números hasheados y los últimos 4 números que siguen visibles
     return hash + lastDigits;
   }
 }
