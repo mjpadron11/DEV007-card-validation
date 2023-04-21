@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
+    <link rel="icon" type="image/x-icon" href="/public/favicon-32x32.png">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -55,12 +56,15 @@
             <img class="check-image" src="/public/round-check-circle.svg" alt="Checked icon">
           </picture>
           <p>Tu tarjeta se ha guardado exitosamente</p>
-          <p id="maskified-card">Tarjeta n°</p>
+          <p id="maskified-card">
+            Tarjeta n°
+            <small id="maskified-card-number">alo</small>
+          </p>
           <button id="modal-button">Aceptar</button>
         </div>
       </div>
     </main>
-    <!-- <footer></footer> -->
+    <footer>© Copyright 2023 · Todos los derechos reservados · Creado desde Bogotá</footer>
     <script src="index.js" type="module"></script>
     <script src="validator.js" type="module"></script>
   </body>
