@@ -31,7 +31,7 @@ Para utilizar el validador de tarjetas de crédito/débito, sigue estos pasos:
 1. Abre la página web del validador.
 2. Ingresa el número de tarjeta de crédito/débito que deseas validar.
 3. Haz clic en el botón "Confirmar".
-4. El resultado de la validación se mostrará en la pantalla a través de una ventana modal en caso de ser válido, y como una alerta en cas.
+4. El resultado de la validación se mostrará en la pantalla a través de una ventana modal en caso de ser válido, y como una alerta en caso de no serlo.
 
 # Cómo contribuir
 Agradecemos cualquier contribución al proyecto. Si deseas contribuir, sigue los siguientes pasos:
