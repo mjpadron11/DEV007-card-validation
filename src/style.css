@@ -82,6 +82,7 @@ form{
   height: 50px;
   background: gainsboro;
   border: 3px solid white;
+  border-radius: 50%;
 }
 
 .return-image-container:hover {
