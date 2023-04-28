@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
-    <link rel="icon" type="image/x-icon" href="nm/public/favicon-32x32.png">
+    <link rel="icon" type="image/x-icon" href="public/favicon-32x32.png">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -20,24 +20,24 @@
         </div>
           <div class="form-container">
             <div class="card-number-box">
-              <label>Número de tarjeta</label>
-              <input type="text" class="number" id="card-number" maxlength="19" required/>
+              <label for="card-number">Número de tarjeta</label>
+              <input type="text" name="card-number" class="number" id="card-number" maxlength="19" required/>
             </div>
             <div class="container">
             <div class="user-information">
               <div class="name-container">
                 <label>Nombre</label>
-                <input type="text" name="" id="card-name" required/>
+                <input type="text" id="card-name" required/>
               </div>
               <div class="expiration-container">
                 <label>Fecha de exp.</label>
-                <input type="month" name="" id="card-exp" required/>
+                <input type="month" id="card-exp" required/>
               </div>
             </div>
             <div class="card-security-information">
               <div class="surname-container">
                 <label>Apellido</label>
-                <input type="text" name="" id="card-lastname" required/>
+                <input type="text" id="card-lastname" required/>
               </div>
               <div class="code-container">
                 <label>CVV</label>
@@ -53,7 +53,7 @@
       <div class="modal-body" id="modal-body">
         <div class="modal-container" id="modal-container">
           <picture class="check-container">
-            <img class="check-image" src="/public/round-check-circle.svg" alt="Checked icon">
+            <img class="check-image" src="public/round-check-circle.svg" alt="Checked icon">
           </picture>
           <p>Tu tarjeta se ha guardado exitosamente</p>
           <p id="maskified-card">
