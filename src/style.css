@@ -14,8 +14,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -26,7 +26,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
+article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -52,20 +52,14 @@ table {
 
 body{
   background-color: rgba(231, 231, 216, 0.87);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   font-size: 20px;
   font-family: 'Courier New', Courier, monospace;
 }
 
 main{
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
   height: 100vh;
 }
 
@@ -77,11 +71,6 @@ form{
   border-radius: 40px;
   max-width: 550px;
   height: 470px;
-}
-
-h1{
-  display: flex;
-  align-items: center;
 }
 
 .return-image-container{
@@ -111,6 +100,7 @@ h1{
 .payment-method-container{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-image: radial-gradient(circle at 117.66% 61.93%, #00abbe 0, #00aac7 7.14%, #00a9cf 14.29%, #00a8d6 21.43%, #00a6dc 28.57%, #00a4e0 35.71%, #28a1e3 42.86%, #489ee5 50%, #609be5 57.14%, #7497e4 64.29%, #8693e1 71.43%, #968fdd 78.57%, #a58bd8 85.71%, #b288d1 92.86%, #bd84c9 100%);
   color:rgb(251, 255, 255);
   font-size: 25px;
@@ -191,8 +181,8 @@ button:hover {
   z-index: 1;
   width: 100%;
   height: 100%;
-  /* overflow: auto;  */
-  background-color: rgba(0, 0, 0, 0.4);
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
 }
 
 .modal-container{
