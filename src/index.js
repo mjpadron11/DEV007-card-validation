@@ -16,8 +16,7 @@ function showModal() {
 }
 
 number.addEventListener("input", (e) => {
-  const currentValue = e.target.value;
-  e.target.value = currentValue.replace(/[^0-9]/g, "");
+  e.target.value = e.target.value.replace(/[^0-9]/g, "");
 });
 
 submitButton.addEventListener("click", (e) => {
